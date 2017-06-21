@@ -54,6 +54,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
     public File tmpFolder = Environment.getExternalStoragePublicDirectory("DMS/tmp");
     public File mapFolder = Environment.getExternalStoragePublicDirectory("DMS/Map");
 
+
     private EditText phoneText1;
     private Button submitButton;
     private Spinner spinner2;
@@ -70,6 +71,8 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!checkPermissions(this, PERMISSIONS)) {
@@ -193,7 +196,6 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
                 }
-                return;
             }
 
             // other 'case' lines to check for other
