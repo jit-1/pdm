@@ -34,3 +34,5 @@ android:
      -$HOME/.gradle/wrapper/
     
     script: ./gradlew connectedAndroidTest
+
+    group: edge
