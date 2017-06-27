@@ -4,6 +4,8 @@ jdk: oraclejdk8
 android:
   components:
     - build-tools
+    - extra-android-m2repository
+    - extra-google-m2repository
 
 script:
     - echo "Travis branch is $TRAVIS_BRANCH"
