@@ -56,9 +56,8 @@ public class PersonInfo extends AppCompatActivity implements Button.OnClickListe
     private int CHOICE_AVATAR_FROM_GALLERY = 2;
     private int CHOICE_AVATAR_FROM_CAMERA = 1;
     private File output = null;
-    private static final String FILENAME = getOutputrMediaFile().toString();
-    private static final String AUTHORITY =
-            BuildConfig.APPLICATION_ID + ".provider";
+    private static final String FILENAME = getOutputMediaFile().toString();
+    private static final String AUTHORITY = BuildConfig.APPLICATION_ID + ".provider";
     private static final String EXTRA_FILENAME =
             "com.example.sanna.test.EXTRA_FILENAME";
     public static final String TMP_FOLDER="tmp";
