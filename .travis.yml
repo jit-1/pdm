@@ -24,6 +24,8 @@ before_install:
   - android list sdk --no-ui --all --extended
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init
+  - chmod +x gradlew
+
 
 branch:
   only:
