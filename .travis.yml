@@ -2,6 +2,11 @@ language: android
 jdk:
     - oraclejdk8
 
+git:
+   submodules: false
+
+
+
 android:
   components:
     - tools
@@ -17,6 +22,8 @@ android:
 
 before_install:
   - android list sdk --no-ui --all --extended
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
 
 
 script:
